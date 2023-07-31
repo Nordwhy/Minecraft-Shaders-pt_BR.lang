@@ -1,0 +1,845 @@
+###############################################
+#           Copyright (C) 2023 Belmu          #
+#       GNU General Public License V3.0       #
+###############################################
+
+#shaders/lang/en_US.lang
+
+##################### MISC #####################
+
+option.ABOUT = §6§lNobleRT
+option.ABOUT.comment = §r§lTwitter: §r§7@Belmu_. §r§lDiscord: §r§7belmu. §r§lPatreon: §r§6https://www.patreon.com/Belmu. §r§lGithub: §r§6https://www.github.com/BelmuTM.
+value.ABOUT.0 = §rby Belmu
+value.ABOUT.1 = §b§lBoop!
+
+profile.RENDER  = §a§lRENDER
+profile.DEFAULT = §a§lPADRÃO
+profile.comment  = §lPADRÃO§r é o perfil do Noble com as configurações padrões. §r§lRENDER§r é o perfil que transforma o Noble em um renderizador, impulsionando algumas configurações. §c§lAVISO: O MODO DE RENDERIZAÇÃO PODE AFETAR DRASTICAMENTE §c§lA PERFORMANCE.
+option.RENDER_SCALE = Escala de Renderização
+option.RENDER_SCALE.comment = Ajusta a escala geral de renderização do Noble. §cValores maiores entregam um resultado melhor, mas reduzem a §cperformance.
+suffix.RENDER_SCALE = x
+
+##################### SCREENS #####################
+
+screen.LIGHTING          = Iluminação
+screen.AMBIENT_OCCLUSION = Oclusão de Ambiente
+screen.RAYTRACING        = Traçado de Raio
+screen.FILTER            = Redução de Ruído
+screen.ATMOSPHERICS      = Atmosféricos
+screen.ATMOSPHERE        = Atmosféra
+screen.CLOUDS            = Nuvens
+screen.CLOUDS_LAYER0     = Camada Primária
+screen.CLOUDS_LAYER1     = Camada Secundária
+screen.FOG               = Névoa
+screen.STARS             = Estrelas
+screen.TERRAIN           = Terreno
+screen.WATER             = Água
+screen.WATER_ABSORPTION  = Absorção
+screen.WATER_SCATTERING  = Dispersão
+screen.POM               = POM
+screen.CAMERA            = Câmera
+screen.CAMERA_SETTINGS   = Configurações de Câmera 
+screen.ANTI_ALIASING     = Antisserrilhamento
+screen.COLOR_GRADING     = Tratamento de Cor
+screen.POST_PROCESSING   = Pós-Processamento
+screen.DEPTH_OF_FIELD    = Depth of Field Profundidade de Campo
+screen.DEBUG             = Debug
+
+##################### LIGHTING #####################
+
+option.BLOCKLIGHT_TEMPERATURE = Temperatura dos Blocos de Luz
+option.BLOCKLIGHT_TEMPERATURE.comment = Ajusta a temperatura do bloco de luz (em Kelvins). Isto influência na cor do bloco de luz.
+suffix.BLOCKLIGHT_TEMPERATURE = K
+
+option.EMISSIVE_INTENSITY = Emissive Intensity
+option.EMISSIVE_INTENSITY.comment = Ajusta a intensidade de emissão dos blocos de luz (em Lúmens).
+suffix.EMISSIVE_INTENSITY =  lúmens
+
+option.DIRECTIONAL_LIGHTMAP = Mapa de Iluminação Direcional
+option.DIRECTIONAL_LIGHTMAP.comment = Faz o mapa de iluminação do Minecraft depender da direção de fonte de luz. §cPode resultar em bugs visuais.
+value.DIRECTIONAL_LIGHTMAP.0 = §cNÃO
+value.DIRECTIONAL_LIGHTMAP.1 = §aSIM
+
+option.SUBSURFACE_SCATTERING = Espalhamento de Subsuperfície
+option.SUBSURFACE_SCATTERING.comment = Simula como a luz penetra certos tipos de materiais (folhas, pele,...). §cRequer um pacote de texturas PBR!
+value.SUBSURFACE_SCATTERING.0 = §cNÃO
+value.SUBSURFACE_SCATTERING.1 = §aSIM
+
+option.MATERIAL_AO = Material AO
+option.MATERIAL_AO.comment = §bOclusão Ambiental de Material§r. Adiciona pseudo-sombras das próprias texturas. §cRequer um pacote de texturas LabPBR!
+value.MATERIAL_AO.0 = §cNÃO
+value.MATERIAL_AO.1 = §aSIM
+
+option.SPECULAR = Especular
+option.SPECULAR.comment = Adiciona um aspecto brilhoso aos blocos.
+value.SPECULAR.0 = §cNÃO
+value.SPECULAR.1 = §aSIM
+
+option.SHADOWS = Sombras
+option.SHADOWS.comment = Adiciona sombras.
+value.SHADOWS.0 = §cNÃO
+value.SHADOWS.1 = §aSIM
+
+option.SHADOW_TYPE = Tipo de Sombra
+option.SHADOW_TYPE.comment = §aNormal§r sombras tem as bordas borradas. §aSuave§r sombras ficam mais suavez quanto mais longe do objeto que as projetou. §aNítida§r sombras tem as bordas bem nítidas.
+value.SHADOW_TYPE.0 = §eNormal
+value.SHADOW_TYPE.1 = §eSuave
+value.SHADOW_TYPE.2 = §eNítida
+
+option.shadowDistance = Distância da Sombra
+option.shadowDistance.comment = Ajusta a distância máxima de renderização das §bSombras§r
+
+option.SHADOW_SAMPLES = Qualidade da Sombra
+option.SHADOW_SAMPLES.comment = Ajusta a qualidade das §bSombras§r. §cResoluções maiores entregam sombras melhores, mas reduzem a §cperformance. §cNão se aplica as sombras rigídas.
+value.SHADOW_SAMPLES.1 = §b1
+value.SHADOW_SAMPLES.2 = §b2
+value.SHADOW_SAMPLES.3 = §33
+value.SHADOW_SAMPLES.4 = §34
+value.SHADOW_SAMPLES.5 = §25
+value.SHADOW_SAMPLES.6 = §26
+value.SHADOW_SAMPLES.7 = §a7
+value.SHADOW_SAMPLES.8 = §a8
+value.SHADOW_SAMPLES.9 = §e9
+value.SHADOW_SAMPLES.10 = §e10
+value.SHADOW_SAMPLES.11 = §611
+value.SHADOW_SAMPLES.12 = §612
+value.SHADOW_SAMPLES.13 = §c13
+value.SHADOW_SAMPLES.14 = §c14
+value.SHADOW_SAMPLES.15 = §415
+value.SHADOW_SAMPLES.16 = §416
+
+option.shadowMapResolution = Resolução da Sombra
+option.shadowMapResolution.comment = Ajusta a resolução das §bSombras§r. §cResoluções maiores entregam sombras mais nítidas, mas reduzem a §cperformance.
+value.shadowMapResolution.512 = §b512
+value.shadowMapResolution.1024 = §31024
+value.shadowMapResolution.2048 = §22048
+value.shadowMapResolution.3072 = §a3072
+value.shadowMapResolution.4096 = §e4096
+value.shadowMapResolution.6144 = §66144
+value.shadowMapResolution.8192 = §c8192
+value.shadowMapResolution.10240 = §410240
+suffix.shadowMapResolution = x
+
+##################### AMBIENT OCCLUSION #####################
+
+option.AO = Oclusão de Ambiente (AO)
+option.AO.comment = §bOclusão de Ambiente. §rAdiciona pseudo-sombras que melhoram a percepção de profundidade duma cena.
+value.AO.0 = §cNÃO
+value.AO.1 = §aSIM
+
+option.AO_FILTER = AO Filtro
+option.AO_FILTER.comment = Acumula a §bOclusão de Ambiente§r sobre vários quadros para minimizar o ruído e entregar um resultado mais limpo.
+value.AO_FILTER.0 = §cNÃO
+value.AO_FILTER.1 = §aSIM
+
+option.AO_TYPE = AO Tipo
+option.AO_TYPE.comment = §aRTAO §7-> §rOclusão de Ambiente por Traçado de Raio. §aSSAO §7-> §rOclusão de Ambiente no Espaço da Tela.
+value.AO_TYPE.0 = §e§lSSAO
+value.AO_TYPE.1 = §e§lRTAO
+value.AO_TYPE.2 = §e§lGTAO
+
+option.AO_SCALE = AO Escala de Renderização
+option.AO_SCALE.comment = Ajusta a escala de renderização do §bAO§r. §cValores maiores entregam um resultado melhor, mas reduzem a §cperformance.
+suffix.AO_SCALE = x
+value.AO_SCALE.10 = 0.10
+value.AO_SCALE.15 = 0.15
+value.AO_SCALE.20 = 0.20
+value.AO_SCALE.25 = 0.25
+value.AO_SCALE.30 = 0.30
+value.AO_SCALE.35 = 0.35
+value.AO_SCALE.40 = 0.40
+value.AO_SCALE.45 = 0.45
+value.AO_SCALE.50 = 0.50
+value.AO_SCALE.55 = 0.55
+value.AO_SCALE.60 = 0.60
+value.AO_SCALE.65 = 0.65
+value.AO_SCALE.70 = 0.70
+value.AO_SCALE.75 = 0.75
+value.AO_SCALE.80 = 0.80
+value.AO_SCALE.85 = 0.85
+value.AO_SCALE.90 = 0.90
+value.AO_SCALE.95 = 0.95
+value.AO_SCALE.100 = 1.00
+
+option.SSAO_SAMPLES = SSAO Qualidade
+option.SSAO_SAMPLES.comment = Influência na qualidade do §bSSAO§r. §cValores maiores entregam um resultado melhor, mas reduzem a §cperformance.
+value.SSAO_SAMPLES.4 = §24
+value.SSAO_SAMPLES.8 = §a8
+value.SSAO_SAMPLES.12 = §e12
+value.SSAO_SAMPLES.16 = §616
+value.SSAO_SAMPLES.20 = §c20
+
+option.SSAO_RADIUS = SSAO Alcance
+option.SSAO_RADIUS.comment = Ajusta o alcance do §bSSAO§r.
+
+option.RTAO_SAMPLES = RTAO Qualidade
+option.RTAO_SAMPLES.comment = Influência na qualidade do §bRTAO§r. §cValores maiores entregam um resultado melhor, mas reduzem a §cperformance.
+value.RTAO_SAMPLES.2 = §22
+value.RTAO_SAMPLES.4 = §a4
+value.RTAO_SAMPLES.6 = §e6
+value.RTAO_SAMPLES.8 = §68
+value.RTAO_SAMPLES.10 = §c10
+
+option.RTAO_STEPS = RTAO Precisão
+option.RTAO_STEPS.comment = Influência na precisão do §bRTAO§r. §cValores maiores entregam um resultado melhor, mas reduzem a §cperformance.
+value.RTAO_STEPS.16 = §216
+value.RTAO_STEPS.24 = §a24
+value.RTAO_STEPS.32 = §e32
+value.RTAO_STEPS.40 = §640
+value.RTAO_STEPS.64 = §c64
+
+option.GTAO_SLICES = GTAO Precisão
+option.GTAO_SLICES.comment = Influência na precisão do §bGTAO§r. §cValores maiores entregam um resultado melhor, mas reduzem a §cperformance.
+value.GTAO_SLICES.1 = §21
+value.GTAO_SLICES.2 = §a2
+value.GTAO_SLICES.3 = §e3
+value.GTAO_SLICES.4 = §64
+value.GTAO_SLICES.5 = §c5
+value.GTAO_SLICES.6 = §46
+
+option.GTAO_RADIUS = GTAO Alcance
+option.GTAO_RADIUS.comment = Ajusta o alcance do §bGTAO§r.
+
+##################### RAY TRACING #####################
+
+### REFLECTIONS & REFRACTIONS
+
+option.REFLECTIONS = Reflexos
+option.REFLECTIONS.comment = §cApenas consegue refletir o que está §cvísivel na sua tela.
+value.REFLECTIONS.0 = §cNÃO
+value.REFLECTIONS.1 = §aSIM
+
+option.REFRACTIONS = Refração
+option.REFRACTIONS.comment = Aplica §bRefração§r para materias refrativos (vidro, água, gelo,...). §cApenas consegue refratar o que está §cvísivel na sua tela.
+value.REFRACTIONS.0 = §cNÃO
+value.REFRACTIONS.1 = §aSIM
+
+option.REFLECTIONS_TYPE = Tipo de Reflexo
+option.REFLECTIONS_TYPE.comment = §bReflexos suavez§r não levam em consideração a aspereza do material. §bReflexos ásperos§r consideram, §celes entregam um §resultado melhor, mas reduzem a performance.
+value.REFLECTIONS_TYPE.0 = §eReflexos Suavez
+value.REFLECTIONS_TYPE.1 = §eReflexos Ásperos 
+
+option.REFLECTIONS_SCALE = Escala de Renderização dos Reflexos
+option.REFLECTIONS_SCALE.comment = Ajusta a escala de renderização dos §bReflexos§r. §cValores maiores entregam um resultado melhor, mas reduzem a §cperformance.
+suffix.REFLECTIONS_SCALE = x
+value.REFLECTIONS_SCALE.10 = 0.10
+value.REFLECTIONS_SCALE.15 = 0.15
+value.REFLECTIONS_SCALE.20 = 0.20
+value.REFLECTIONS_SCALE.25 = 0.25
+value.REFLECTIONS_SCALE.30 = 0.30
+value.REFLECTIONS_SCALE.35 = 0.35
+value.REFLECTIONS_SCALE.40 = 0.40
+value.REFLECTIONS_SCALE.45 = 0.45
+value.REFLECTIONS_SCALE.50 = 0.50
+value.REFLECTIONS_SCALE.55 = 0.55
+value.REFLECTIONS_SCALE.60 = 0.60
+value.REFLECTIONS_SCALE.65 = 0.65
+value.REFLECTIONS_SCALE.70 = 0.70
+value.REFLECTIONS_SCALE.75 = 0.75
+value.REFLECTIONS_SCALE.80 = 0.80
+value.REFLECTIONS_SCALE.85 = 0.85
+value.REFLECTIONS_SCALE.90 = 0.90
+value.REFLECTIONS_SCALE.95 = 0.95
+value.REFLECTIONS_SCALE.100 = 1.00
+
+### GLOBAL ILLUMINATION
+
+option.GI = Iluminação Global (GI)
+option.GI.comment = Simula o saltar da luz, §7§l§oexemplo: a cor de uma parede §7§l§overde vai se espalhar num objeto do lado. §cApenas consegue ter informação do que está §cvísivel na sua tela.
+value.GI.0 = §cNÃO
+value.GI.1 = §aSIM
+
+option.GI_FILTER = Filtragem
+option.GI_FILTER.comment = Reduz o ruído da §bIluminação Global§r.
+value.GI_FILTER.0 = §cNÃO
+value.GI_FILTER.1 = §aSIM
+
+option.GI_TEMPORAL_ACCUMULATION = Acumulação Temporal
+option.GI_TEMPORAL_ACCUMULATION.comment = Acumula a §bIluminação Global§r sobre vários quadros para minimizar o ruído e entregar um resultado mais limpo.
+value.GI_TEMPORAL_ACCUMULATION.0 = §cNÃO
+value.GI_TEMPORAL_ACCUMULATION.1 = §aSIM
+
+option.ATROUS_STEP_SIZE = Tamanho do Borrão
+option.ATROUS_STEP_SIZE.comment = Ajusta o tamanho do borrão usado para reduzir o ruído.
+
+option.NORMAL_WEIGHT_SIGMA = Força do Peso Normal
+option.NORMAL_WEIGHT_SIGMA.comment = Asjuta a força do peso normal usada na redução de ruído.
+
+option.DEPTH_WEIGHT_SIGMA = Força do Peso da Profundidade 
+option.DEPTH_WEIGHT_SIGMA.comment = Ajusta a força do peso da profundidade usada na redução de ruído.
+
+option.LUMA_WEIGHT_SIGMA = Força do Peso da Luminância
+option.LUMA_WEIGHT_SIGMA.comment = Ajusta a força do peso da luminância usada na redução de ruído.
+
+option.SKY_CONTRIBUTION = Contribuição do Céu
+option.SKY_CONTRIBUTION.comment = Contribuição do Céu para a §bIluminação Global§r (pode ser problemático no espaço de tela). Deixa o céu contribuir na iluminação indireta.
+value.SKY_CONTRIBUTION.0 = §cOFF
+value.SKY_CONTRIBUTION.1 = §aON
+
+option.GI_SCALE = GI Escala de Renderização 
+option.GI_SCALE.comment = Ajusta a escala de renderização do §bGI§. §cValores maiores entregam um resultado melhor, mas reduzem a §cperformance.
+suffix.GI_SCALE = x
+value.GI_SCALE.10 = 0.10
+value.GI_SCALE.15 = 0.15
+value.GI_SCALE.20 = 0.20
+value.GI_SCALE.25 = 0.25
+value.GI_SCALE.30 = 0.30
+value.GI_SCALE.35 = 0.35
+value.GI_SCALE.40 = 0.40
+value.GI_SCALE.45 = 0.45
+value.GI_SCALE.50 = 0.50
+value.GI_SCALE.55 = 0.55
+value.GI_SCALE.60 = 0.60
+value.GI_SCALE.65 = 0.65
+value.GI_SCALE.70 = 0.70
+value.GI_SCALE.75 = 0.75
+value.GI_SCALE.80 = 0.80
+value.GI_SCALE.85 = 0.85
+value.GI_SCALE.90 = 0.90
+value.GI_SCALE.95 = 0.95
+value.GI_SCALE.100 = 1.00
+
+option.GI_SAMPLES = GI Qualidade
+option.GI_SAMPLES.comment = Ajusta a quantidade de amostragem usada para calcular a §bIluminaçao Global§r. §cValores maiores entregam um resultado melhor, mas reduzem a §cperformance.
+
+option.MAX_GI_BOUNCES = GI Saltos
+option.MAX_GI_BOUNCES.comment = Faz a §bIluminação Global§r saltar §aX§r vezes para coletar luz. §cValores maiores entregam um resultado melhor, mas reduzem a §cperformance.
+value.MAX_GI_BOUNCES.9999 = §cInfinito
+
+### RAY TRACING
+
+option.BINARY_REFINEMENT = Refinamento Binário
+option.BINARY_REFINEMENT.comment = Ajusta a posição de acerto do traçamento de raios para deixa-lo mais preciso. §cValores maiores entregam um resultado melhor, mas reduzem a §cperformance.
+value.BINARY_REFINEMENT.0 = §cNÃO
+value.BINARY_REFINEMENT.1 = §aSIM
+
+option.SSR_REPROJECTION = SSR Reprojeção
+option.SSR_REPROJECTION.comment = Reflete o último quadro para fazer a luz saltar infinitamente. §aNão afeta a performance.
+value.SSR_REPROJECTION.0 = §cNÃO
+value.SSR_REPROJECTION.1 = §aSIM
+
+##################### ATMOSPHERICS #####################
+
+option.sunPathRotation = Rotação da Trajetótira Celestial
+option.sunPathRotation.comment = Ajusta a rotação de trajetória do sol / lua.
+suffix.sunPathRotation = °
+
+option.CELESTIAL_SIZE_MULTIPLIER = Multiplicador de Tamanho Celestial
+option.CELESTIAL_SIZE_MULTIPLIER.comment = Ajusta o tamanho do sol / lua.
+suffix.CELESTIAL_SIZE_MULTIPLIER = x
+
+### ATMOSPHERE
+
+option.ATMOSPHERE_SCALE = Escala de Renderização
+option.ATMOSPHERE_SCALE.comment = Ajusta a escala de renderização da §bAtmosféra§r. §cValores maiores entregam um resultado melhor, mas reduzem a §cperformance.
+suffix.ATMOSPHERE_SCALE = x
+value.ATMOSPHERE_SCALE.10 = 0.10
+value.ATMOSPHERE_SCALE.15 = 0.15
+value.ATMOSPHERE_SCALE.20 = 0.20
+value.ATMOSPHERE_SCALE.25 = 0.25
+value.ATMOSPHERE_SCALE.30 = 0.30
+value.ATMOSPHERE_SCALE.35 = 0.35
+value.ATMOSPHERE_SCALE.40 = 0.40
+value.ATMOSPHERE_SCALE.45 = 0.45
+value.ATMOSPHERE_SCALE.50 = 0.50
+value.ATMOSPHERE_SCALE.55 = 0.55
+value.ATMOSPHERE_SCALE.60 = 0.60
+value.ATMOSPHERE_SCALE.65 = 0.65
+value.ATMOSPHERE_SCALE.70 = 0.70
+value.ATMOSPHERE_SCALE.75 = 0.75
+value.ATMOSPHERE_SCALE.80 = 0.80
+value.ATMOSPHERE_SCALE.85 = 0.85
+value.ATMOSPHERE_SCALE.90 = 0.90
+value.ATMOSPHERE_SCALE.95 = 0.95
+value.ATMOSPHERE_SCALE.100 = 1.00
+
+option.ATMOSPHERE_SCATTERING_STEPS = Qualidade da Dispersão
+option.ATMOSPHERE_SCATTERING_STEPS.comment = Influência na precisão da dispersão de luz na atmosféra. §cValores maiores entregam um resultado melhor, mas reduzem a §cperformance.
+value.ATMOSPHERE_SCATTERING_STEPS.8  = §38
+value.ATMOSPHERE_SCATTERING_STEPS.12 = §212
+value.ATMOSPHERE_SCATTERING_STEPS.16 = §a16
+value.ATMOSPHERE_SCATTERING_STEPS.20 = §e20
+value.ATMOSPHERE_SCATTERING_STEPS.24 = §624
+value.ATMOSPHERE_SCATTERING_STEPS.28 = §c28
+value.ATMOSPHERE_SCATTERING_STEPS.32 = §432
+
+option.ATMOSPHERE_TRANSMITTANCE_STEPS = Qualidade de Transmitância
+option.ATMOSPHERE_TRANSMITTANCE_STEPS.comment = Influência na precisão da transmissão da luz na atmosféra. §cValores maiores entregam um resultado melhor, mas reduzem a §cperformance.
+value.ATMOSPHERE_TRANSMITTANCE_STEPS.8  = §38
+value.ATMOSPHERE_TRANSMITTANCE_STEPS.12 = §212
+value.ATMOSPHERE_TRANSMITTANCE_STEPS.16 = §a16
+value.ATMOSPHERE_TRANSMITTANCE_STEPS.20 = §e20
+value.ATMOSPHERE_TRANSMITTANCE_STEPS.24 = §624
+value.ATMOSPHERE_TRANSMITTANCE_STEPS.28 = §c28
+value.ATMOSPHERE_TRANSMITTANCE_STEPS.32 = §432
+
+### CLOUDS
+
+option.CLOUDS_SCALE = Escala de Renderização
+option.CLOUDS_SCALE.comment = Ajusta a escala de renderização das §bNuvens§r. §cValores maiores entregam um resultado melhor, mas reduzem a §cperformance.
+suffix.CLOUDS_SCALE = x
+value.CLOUDS_SCALE.10 = 0.10
+value.CLOUDS_SCALE.15 = 0.15
+value.CLOUDS_SCALE.20 = 0.20
+value.CLOUDS_SCALE.25 = 0.25
+value.CLOUDS_SCALE.30 = 0.30
+value.CLOUDS_SCALE.35 = 0.35
+value.CLOUDS_SCALE.40 = 0.40
+value.CLOUDS_SCALE.45 = 0.45
+value.CLOUDS_SCALE.50 = 0.50
+value.CLOUDS_SCALE.55 = 0.55
+value.CLOUDS_SCALE.60 = 0.60
+value.CLOUDS_SCALE.65 = 0.65
+value.CLOUDS_SCALE.70 = 0.70
+value.CLOUDS_SCALE.75 = 0.75
+value.CLOUDS_SCALE.80 = 0.80
+value.CLOUDS_SCALE.85 = 0.85
+value.CLOUDS_SCALE.90 = 0.90
+value.CLOUDS_SCALE.95 = 0.95
+value.CLOUDS_SCALE.100 = 1.00
+
+option.CLOUDS_WIND_SPEED = Velocidade do Vento
+option.CLOUDS_WIND_SPEED.comment = Ajusta a velocidade que o vento afeta as nuvens.
+suffix.CLOUDS_WIND_SPEED = km/h
+
+option.CLOUDS_SHADOWS = Sombras das Nuvens
+option.CLOUDS_SHADOWS.comment = Faz a camada primária das nuvens projetar sombras no chão.
+value.CLOUDS_SHADOWS.0 = §cNÃO
+value.CLOUDS_SHADOWS.1 = §aSIM
+
+option.CLOUDS_SHADOWS_RESOLUTION = Resolução das Sombras das Nuvens
+option.CLOUDS_SHADOWS_RESOLUTION.comment = Ajusta a resolução das §bSombras das Nuvens§r.
+suffix.CLOUDS_SHADOWS_RESOLUTION = x
+
+### CLOUDS LAYER 0
+
+option.CLOUDS_LAYER0_ENABLED  = Camadas
+value.CLOUDS_LAYER0_ENABLED.0 = §cNÃO
+value.CLOUDS_LAYER0_ENABLED.1 = §aSIM
+
+option.CLOUDS_LAYER0_SCATTERING_STEPS = Qualidade da Dispersão
+option.CLOUDS_LAYER0_SCATTERING_STEPS.comment = Influência na precisão da dispersão da luz dentro desta camada de nuvens. §cValores maiores entregam um resultado melhor, mas reduzem a §cperformance.
+value.CLOUDS_LAYER0_SCATTERING_STEPS.4  = §b4
+value.CLOUDS_LAYER0_SCATTERING_STEPS.8  = §38
+value.CLOUDS_LAYER0_SCATTERING_STEPS.12 = §212
+value.CLOUDS_LAYER0_SCATTERING_STEPS.16 = §a16
+value.CLOUDS_LAYER0_SCATTERING_STEPS.20 = §e20
+value.CLOUDS_LAYER0_SCATTERING_STEPS.24 = §624
+value.CLOUDS_LAYER0_SCATTERING_STEPS.28 = §c28
+value.CLOUDS_LAYER0_SCATTERING_STEPS.32 = §432
+
+option.CLOUDS_LAYER0_OCTAVES = Oitavas do Formato
+option.CLOUDS_LAYER0_OCTAVES.comment = Quantas camadas de ruído são geradas para produzir o formato da nuvem. §cValores maiores entregam um resultado melhor, mas reduzem a §cperformance.
+value.CLOUDS_LAYER0_OCTAVES.1 = §21
+value.CLOUDS_LAYER0_OCTAVES.2 = §a2
+value.CLOUDS_LAYER0_OCTAVES.3 = §e3
+value.CLOUDS_LAYER0_OCTAVES.4 = §64
+value.CLOUDS_LAYER0_OCTAVES.5 = §c5
+value.CLOUDS_LAYER0_OCTAVES.6 = §46
+
+option.CLOUDS_LAYER0_SCALE = Escala de Formato
+option.CLOUDS_LAYER0_SCALE.comment = Ajusta a escala do formato da nuvem.
+suffix.CLOUDS_LAYER0_SCALE = %
+
+option.CLOUDS_LAYER0_DETAILSCALE = Escala de Detalhe
+option.CLOUDS_LAYER0_DETAILSCALE.comment = Ajusta a escala do detalhe da nuvem.
+suffix.CLOUDS_LAYER0_DETAILSCALE = %
+
+option.CLOUDS_LAYER0_FREQUENCY = Frequência de Formato
+option.CLOUDS_LAYER0_FREQUENCY.comment = Ajusta a frequência de formato da nuvem.
+suffix.CLOUDS_LAYER0_FREQUENCY = x
+
+option.CLOUDS_LAYER0_DENSITY = Densidade
+option.CLOUDS_LAYER0_DENSITY.comment = Ajusta a densidade das nuvens.
+suffix.CLOUDS_LAYER0_DENSITY = %
+
+option.CLOUDS_LAYER0_ALTITUDE = Altitude
+option.CLOUDS_LAYER0_ALTITUDE.comment = Ajusta a altitude das nuvens.
+suffix.CLOUDS_LAYER0_ALTITUDE = m
+
+option.CLOUDS_LAYER0_THICKNESS = Espessura
+option.CLOUDS_LAYER0_THICKNESS.comment = Ajusta a espessura das nuvens.
+suffix.CLOUDS_LAYER0_THICKNESS = m
+
+option.CLOUDS_LAYER0_COVERAGE = Cobertura
+option.CLOUDS_LAYER0_COVERAGE.comment = Ajusta quanto do céu as nuvens combrem.
+suffix.CLOUDS_LAYER0_COVERAGE = %
+
+option.CLOUDS_LAYER0_SWIRL = Ondulação
+option.CLOUDS_LAYER0_SWIRL.comment = Ajusta a ondulação das nuvens.
+suffix.CLOUDS_LAYER0_SWIRL = %
+
+### CLOUDS LAYER 1
+
+option.CLOUDS_LAYER1_ENABLED  = Camada
+value.CLOUDS_LAYER1_ENABLED.0 = §cNÃO
+value.CLOUDS_LAYER1_ENABLED.1 = §aSIM
+
+option.CLOUDS_LAYER1_SCATTERING_STEPS = Qualidade da Dispersão
+option.CLOUDS_LAYER1_SCATTERING_STEPS.comment = Influência na precisão da dispersão da luz dentro desta camada de nuvens. §cValores maiores entregam um resultado melhor, mas reduzem a §cperformance.
+value.CLOUDS_LAYER1_SCATTERING_STEPS.4  = §b4
+value.CLOUDS_LAYER1_SCATTERING_STEPS.8  = §38
+value.CLOUDS_LAYER1_SCATTERING_STEPS.12 = §212
+value.CLOUDS_LAYER1_SCATTERING_STEPS.16 = §a16
+value.CLOUDS_LAYER1_SCATTERING_STEPS.20 = §e20
+value.CLOUDS_LAYER1_SCATTERING_STEPS.24 = §624
+value.CLOUDS_LAYER1_SCATTERING_STEPS.28 = §c28
+value.CLOUDS_LAYER1_SCATTERING_STEPS.32 = §432
+
+option.CLOUDS_LAYER1_OCTAVES = Oitavas do Formato
+option.CLOUDS_LAYER1_OCTAVES.comment = Quantas camadas de ruído são geradas para produzir o formato da nuvem. §cValores maiores entregam um resultado melhor, mas reduzem a §cperformance.
+value.CLOUDS_LAYER1_OCTAVES.1 = §21
+value.CLOUDS_LAYER1_OCTAVES.2 = §a2
+value.CLOUDS_LAYER1_OCTAVES.3 = §e3
+value.CLOUDS_LAYER1_OCTAVES.4 = §64
+value.CLOUDS_LAYER1_OCTAVES.5 = §c5
+value.CLOUDS_LAYER1_OCTAVES.6 = §46
+
+option.CLOUDS_LAYER1_SCALE = Escala de Formato
+option.CLOUDS_LAYER1_SCALE.comment = Ajusta a escala do formato da nuvem.
+suffix.CLOUDS_LAYER1_SCALE = %
+
+option.CLOUDS_LAYER1_DETAILSCALE = Escala de Detalhe
+option.CLOUDS_LAYER1_DETAILSCALE.comment = Ajusta a escala do detalhe da nuvem.
+suffix.CLOUDS_LAYER1_DETAILSCALE = %
+
+option.CLOUDS_LAYER1_FREQUENCY = Frequência de Formato
+option.CLOUDS_LAYER1_FREQUENCY.comment = Ajusta a frequência de formato da nuvem.
+suffix.CLOUDS_LAYER1_FREQUENCY = x
+
+option.CLOUDS_LAYER1_DENSITY = Densidade
+option.CLOUDS_LAYER1_DENSITY.comment = justa a densidade das nuvens.
+suffix.CLOUDS_LAYER1_DENSITY = %
+
+option.CLOUDS_LAYER1_ALTITUDE = Altitude
+option.CLOUDS_LAYER1_ALTITUDE.comment = Ajusta a altitude das nuvens.
+suffix.CLOUDS_LAYER1_ALTITUDE = m
+
+option.CLOUDS_LAYER1_THICKNESS = Espessura
+option.CLOUDS_LAYER1_THICKNESS.comment = Ajusta quanto do céu as nuvens combrem.
+suffix.CLOUDS_LAYER1_THICKNESS = m
+
+option.CLOUDS_LAYER1_COVERAGE = Cobertura
+option.CLOUDS_LAYER1_COVERAGE.comment = Ajusta quanto do céu as nuvens combrem.
+suffix.CLOUDS_LAYER1_COVERAGE = %
+
+option.CLOUDS_LAYER1_SWIRL = Ondulação
+option.CLOUDS_LAYER1_SWIRL.comment = Ajusta a ondulação das nuvens.
+suffix.CLOUDS_LAYER1_SWIRL = %
+
+### FOG
+
+option.AIR_FOG = Névoa
+option.AIR_FOG.comment = Simula a luz sendo dispersa em partículas densas. §aAproximação§r é uma forma semi-exata de calcular a névoa. §aVolumétrica§r usa ray marching e calculos complexos pra calcular a névoa de forma precisa.
+value.AIR_FOG.0 = §cNÃO
+value.AIR_FOG.1 = §e§lVolumétrica (VF)
+value.AIR_FOG.2 = §e§lAproximação
+
+option.AIR_FOG_SCATTERING_STEPS = VF Qualidade de Dispersão
+option.AIR_FOG_SCATTERING_STEPS.comment = Influência na precisão de disperão da §bNévoa Volumétrica§r. §cValores maiores entregam um resultado melhor, mas reduzem a §cperformance.
+value.AIR_FOG_SCATTERING_STEPS.4  = §b4
+value.AIR_FOG_SCATTERING_STEPS.8  = §38
+value.AIR_FOG_SCATTERING_STEPS.12 = §212
+value.AIR_FOG_SCATTERING_STEPS.16 = §a16
+value.AIR_FOG_SCATTERING_STEPS.20 = §e20
+value.AIR_FOG_SCATTERING_STEPS.24 = §624
+value.AIR_FOG_SCATTERING_STEPS.28 = §c28
+value.AIR_FOG_SCATTERING_STEPS.32 = §432
+
+option.FOG_ALTITUDE = Altitude
+option.FOG_ALTITUDE.comment = Ajusta a altitude da névoa.
+
+option.FOG_THICKNESS = Espessura
+option.FOG_THICKNESS.comment = Ajusta a espessura da névoa.
+
+option.FOG_DENSITY = Densidade
+option.FOG_DENSITY.comment = Ajusta a densidade da névoa.
+
+### STARS
+
+option.STARS_AMOUNT = Quantidade
+option.STARS_AMOUNT.comment = Ajusta a quantidade de estrelas no céu.
+suffix.STARS_AMOUNT = %
+
+option.STARS_LUMINOSITY = Luminosidade
+option.STARS_LUMINOSITY.comment = Ajusta o brilho das estrelas no céu.
+
+##################### TERRAIN #####################
+
+### WATER
+
+option.WATER_CAUSTICS = Cáusticas da Água
+option.WATER_CAUSTICS.comment = Cáusticas produzidas pela refração de luz na água. Elas são projetadas debaixo d'água.
+value.WATER_CAUSTICS.0 = §cNÃO
+value.WATER_CAUSTICS.1 = §aSIM
+
+option.WATER_CAUSTICS_STRENGTH = Força das Cáusticas
+option.WATER_CAUSTICS_STRENGTH.comment = Ajusta a intensidade das §bCáusticas da Água§r.
+
+option.WATER_OCTAVES = Oitavas das Ondas
+option.WATER_OCTAVES.comment = Influência nos detalhes das §bOndas da Água§r. §cValores maiores entregam um resultado melhor, mas reduzem a §cperformance.
+value.WATER_OCTAVES.2 = §32
+value.WATER_OCTAVES.4 = §24
+value.WATER_OCTAVES.6 = §a6
+value.WATER_OCTAVES.8 = §e8
+value.WATER_OCTAVES.16 = §616
+value.WATER_OCTAVES.32 = §c32
+value.WATER_OCTAVES.48 = §448
+
+option.WAVE_STEEPNESS = Inclinação das Ondas
+option.WAVE_STEEPNESS.comment = Ajusta a inclinação das ondas da água. Razão entre altura e largura.
+
+option.WAVE_AMPLITUDE = Amplitude as Ondas
+option.WAVE_AMPLITUDE.comment = Ajusta a amplitude das ondas da água.
+
+option.WAVE_LENGTH = Comprimento das Ondas
+option.WAVE_LENGTH.comment = Ajusta o comprimento das ondas da água (em metros).
+suffix.WAVE_LENGTH = m
+
+option.WATER_FOG = Névoa da Água
+option.WATER_FOG.comment = Simula a absorção e dispersão da luz na água. §aAproximação§r é uma forma semi-exata de calcular a névoa da água. §aVolumétrica§r usa ray marching e calculos complexos pra calcular a névoa da água de forma precisa.
+value.WATER_FOG.0 = §e§lAproximaçãon
+value.WATER_FOG.1 = §e§lVolumétrica
+
+option.WATER_FOG_STEPS = Qualidade da Névoa Volumétrica na Água 
+option.WATER_FOG_STEPS.comment = Influência na precisão da §bNévoa na Água§r. §cValores maiores entregam um resultado melhor, mas reduzem a §cperformance.
+value.WATER_FOG_STEPS.4 = §24
+value.WATER_FOG_STEPS.8 = §a8
+value.WATER_FOG_STEPS.16 = §e16
+value.WATER_FOG_STEPS.32 = §632
+
+option.WATER_ABSORPTION_R = Absorção da Água §cVermelho
+option.WATER_ABSORPTION_R.comment = Ajusta como a água absorve a luz. Valores maiores significam que o §cvermelho§r é mais absorvido.
+
+option.WATER_ABSORPTION_G = Absorção da Água §aVerde
+option.WATER_ABSORPTION_G.comment = Ajusta como a água absorve a luz. Valores maiores significam que o §averde§r é mais absorvido.
+
+option.WATER_ABSORPTION_B = Absorção da Água §9Azul
+option.WATER_ABSORPTION_B.comment = Ajusta como a água absorve a luz. Valores maiores significam que o §9azul§r é mais absorvido.
+
+option.WATER_SCATTERING_R = Dispersão da água §cVermelho
+option.WATER_SCATTERING_R.comment = Ajusta como a água dispersa a luz. Valores maiores significam que o §cvermelho§r é mais disperso.
+
+option.WATER_SCATTERING_G = Dispersão da água §aVerde
+option.WATER_SCATTERING_G.comment = Ajusta como a água dispersa a luz. Valores maiores significam que o §averde§r é mais disperso.
+
+option.WATER_SCATTERING_B = Dispersão da água §9Azul
+option.WATER_SCATTERING_B.comment = Ajusta como a água dispersa a luz. Valores maiores significam que o §9azul§r é mais disperso.
+
+### POM
+
+option.POM = POM
+option.POM.comment = §bMapeamento de Oclusão Paralaxe. §rProduz profundidade num material ao criar uma definição 3D de seu mapa de altura. §aÍngreme§r POM é pixelado. §aLiso§r POM filtra o mapa de altura para remover a pixelização.
+value.POM.0 = §cNÃO
+value.POM.1 = §e§lÍngrime
+value.POM.2 = §e§lLiso
+
+option.POM_LAYERS = POM Camadas
+option.POM_LAYERS.comment = Ajusta a qualidade do §bPOM§r, quanto mais camadas tiver, mais detalhado vai ser. §cValores maiores entregam um resultado melhor, mas reduzem a §cperformance.
+value.POM_LAYERS.32 = §a32
+value.POM_LAYERS.64 = §e64
+value.POM_LAYERS.128 = §6128
+value.POM_LAYERS.256 = §c256
+value.POM_LAYERS.512 = §4512
+
+option.POM_DEPTH = POM Profundidade
+option.POM_DEPTH.comment = Ajusta a profundidade do §bPOM§r.
+
+### TERRAIN
+
+option.WHITE_WORLD = Mundo Branco
+option.WHITE_WORLD.comment = Deixa o ambiente completamento branco.
+value.WHITE_WORLD.0 = §cNÃO
+value.WHITE_WORLD.1 = §aSIM
+
+option.WAVING_PLANTS = Pantas Balançando
+option.WAVING_PLANTS.comment = Faz platnas como folhas e flores balançarem ao vento.
+value.WAVING_PLANTS.0 = §cNÃO
+value.WAVING_PLANTS.1 = §aSIM
+
+option.RAIN_PUDDLES = Poças D'água
+option.RAIN_PUDDLES.comment = Simula a aparição de poças no chão durante a chuva.
+value.RAIN_PUDDLES.0 = §cNÃO
+value.RAIN_PUDDLES.1 = §aSIM
+
+option.RAIN_PUDDLES_SIZE = Tamanho das Poças D'água
+option.RAIN_PUDDLES_SIZE.comment = Ajusta o tamanho das §bPoças D'água§r.
+suffix.RAIN_PUDDLES_SIZE = %
+
+##################### CAMERA SETTINGS #####################
+
+option.EXPOSURE = Exposição
+option.EXPOSURE.comment = §aManual§r deixa você ajustar as configurações de exposição manualmente de forma livre. §aMédia§r ajusta a exposição dependendo luminosidade média da tela. §aHistograma§r ajusta a exposição automaticamente, dependendo de um histograma da luminosidade média da tela.
+value.EXPOSURE.0 = §e§lManual
+value.EXPOSURE.1 = §e§lMédia (Auto.)
+value.EXPOSURE.2 = §e§lHistograma (Auto.)
+
+# https://www.nikonusa.com/en/learn-and-explore/a/tips-and-techniques/understanding-focal-length.html#:~:text=Focal%20length%2C%20usually%20represented%20in,description%20of%20a%20photographic%20lens.&text=The%20longer%20the%20focal%20length,and%20the%20lower%20the%20magnification.
+option.FOCAL = Comprimento Focal
+option.FOCAL.comment = Geralmente representado em milímetros, o comprimento focal é a descrição básica de uma lente fotográfica. Quanto mais longo o comprimento focal, mais estreito é o ângulo de visualização. Isto influência a §bProfundidade de Campo.
+suffix.FOCAL = mm
+
+# https://www.nikonusa.com/en/learn-and-explore/a/tips-and-techniques/understanding-maximum-aperture.html#:~:text=What%20is%20aperture%20in%20photography,diaphragm%20through%20which%20light%20passes.&text=Lower%20f%2Fstops%20give%20more,because%20they%20represent%20smaller%20apertures.
+option.F_STOPS = Abertura
+option.F_STOPS.comment = Abertura do diafragma de uma lente onde a luz penetra, valores menores capturam mais luz.
+prefix.F_STOPS = ƒ/
+
+# https://wp-modula.com/what-is-iso-in-photography/
+option.ISO = ISO
+option.ISO.comment = ISO é uma opção que vai iluminar ou escurecer a sua fotografia, aumentar isto faz suas fotografias ficarem mais claras e ajuda a capturar boas fotos em ambientes escuros.
+
+# https://imaging.nikon.com/lineup/dslr/basics/04/03.htm#:~:text=Shutter%20speed%20is%20a%20measurement,1%2F%20500%20s%2C%20etc.&text=In%20other%20words%2C%20the%20faster,the%20effects%20of%20camera%20shake.
+option.SHUTTER_SPEED = Velocidade do Obturador
+option.SHUTTER_SPEED.comment = Uma medição do tempo em que o obturador da câmera fica aberto, mostrado em frações dum segundo.
+prefix.SHUTTER_SPEED = 1/
+suffix.SHUTTER_SPEED = s
+
+##################### DEPTH OF FIELD #####################
+
+option.DOF = Profundidade de Campo (DOF)
+option.DOF.comment = Desfoca objetos que estão fora de foco. Influênciado pela §eabertura§r e §ecomprimento focal§r nas configurações de câmera.
+value.DOF.0 = §cNÃO
+value.DOF.1 = §aSIM
+
+option.DOF_SAMPLES = DOF Qualidade
+option.DOF_SAMPLES.comment = Ajusta quanto tempo a §bProfundidade de Campo§r é amostrada. §cValores maiores entregam um resultado melhor, mas reduzem a §cperformance.
+value.DOF_SAMPLES.4 = §b4
+value.DOF_SAMPLES.6 = §36
+value.DOF_SAMPLES.8 = §28
+value.DOF_SAMPLES.10 = §a10
+value.DOF_SAMPLES.12 = §e12
+value.DOF_SAMPLES.14 = §614
+value.DOF_SAMPLES.16 = §c16
+
+option.DOF_RADIUS = DOF Raio
+option.DOF_RADIUS.comment = Ajusta a intensidade da §bProfundidade de Campo§r.
+
+option.DOF_DEPTH = DOF Foco de Profundidade
+option.DOF_DEPTH.comment = Ajusta a profundidade em que a §bProfundidade de Campo§r é focada. É medido em blocos.
+value.DOF_DEPTH.0 = §eAuto-Foco
+
+##################### COLOR GRADING #####################
+
+option.TONEMAP = Mapeamento de Tons
+option.TONEMAP.comment = Aplica um filtro de correção de cores.
+value.TONEMAP.-1 = §cNENHUM
+value.TONEMAP.0 = ACES
+value.TONEMAP.1 = Burgess
+value.TONEMAP.2 = Reinhard
+value.TONEMAP.3 = Lottes
+value.TONEMAP.4 = Uchimura
+value.TONEMAP.5 = Uncharted 2
+
+option.LUT = LUT
+option.LUT.comment = Aplica um filtro de cor usando uma tabela de consulta (LUT). É parte do grau de cores.
+value.LUT.0  = §cNENHUM
+value.LUT.1  = §eFuji 250D Fuji 3510
+value.LUT.2  = §eFuji 250D Kodak 2395
+value.LUT.3  = §eKodak 5218 Kodak 2383
+value.LUT.4  = §eFuji f125 Kodak 2393
+value.LUT.5  = §eCandle Light
+value.LUT.6  = §eArabica
+value.LUT.7  = §eLate Sunset
+value.LUT.8  = §eEdgy Amber
+value.LUT.9  = §eCrisp Warm
+value.LUT.10 = §eCrisp Winter
+value.LUT.11 = §eMcKinnon 75
+value.LUT.12 = §eMilo 5
+value.LUT.13 = §eZed 32
+value.LUT.14 = §eFilmstock
+value.LUT.15 = §eValley Mist
+value.LUT.16 = §eNight Colors
+value.LUT.17 = §eBinary Code
+value.LUT.18 = §eBlack and Red
+value.LUT.19 = §e2Strip
+value.LUT.20 = §eFuturistic Bleak
+
+option.PURKINJE = Desaturação de Luz Baixa
+option.PURKINJE.comment = Ajusta a intensidade de cor dependendo da quantidade de luz, é normalmente chamado de Purkinje Effect.
+value.PURKINJE.0 = §cNÃO
+value.PURKINJE.1 = §aSIM
+
+option.WHITE_BALANCE = Equilíbrio de Branco
+option.WHITE_BALANCE.comment = Equilibra a temperatura da cor para manter uma imagem neutra.
+suffix.WHITE_BALANCE = K
+
+# http://www.digital-intermediate.co.uk/colour/colourterminology.htm
+option.VIBRANCE = Vibração
+option.VIBRANCE.comment = Se refere a cores fortes e brilhantes, adicionando saturação para suavizar as cores.
+
+option.SATURATION = Saturação
+option.SATURATION.comment = Saturação se refere ao nível de saturação de cor da imagem ou a quantidade de informação crominante.
+
+option.CONTRAST = Contraste
+option.CONTRAST.comment = Diferença em luminância ou cor que faz um objeto.
+
+option.GAMMA = Gama de Cor
+option.GAMMA.comment = Trabalha nos níveis entre sombras e luzes da imagem, normalmente conhecido como meio-tons ou tons médios
+
+option.GAIN = Ganho
+option.GAIN.comment = Ajusta os níveis de branco (luminosidade), cores mais brilhantes ficam mais escuras ou mais brilhantes - quanto mais brilhante, mais forte a diferença.
+
+option.LIFT = Aumento
+option.LIFT.comment = Ajusta o nível de preto da imagem (tons escuros ou sombras).
+
+##################### ANTI-ALIASING #####################
+
+option.TAA = TAA
+option.TAA.comment = §bAntisserrilhamento Temporal. §rUma forma de antisserrilhamento que mistura quadros passados para reduzir o serrilhamento.
+value.TAA.0 = §cNÃO
+value.TAA.1 = §aSIM
+
+option.TAA_STRENGTH = Força
+option.TAA_STRENGTH.comment = Ajusta a força do §bAntisserrilhamento Temporal§r.
+
+option.TAA_OFFCENTER_REJECTION = Rejeição de Deslocamento
+option.TAA_OFFCENTER_REJECTION.comment = Ajusta a força do peso da rejeião de deslocamento do §bAntisserrilhamento Temporal§r. Quanto menor o valor é, mais fraco o TAA é durante o movimento.
+
+##################### POST-PROCESSING #####################
+
+option.BLOOM = Luminescência
+option.BLOOM.comment = Luminescência são pontos brilhantes na tela que propagam luz na área em torno deles. 
+value.BLOOM.0 = §cNÃO
+value.BLOOM.1 = §aSIM
+
+option.BLOOM_STRENGTH = Força da Luminescência
+option.BLOOM_STRENGTH.comment = Ajusta a intensidade da §bLuminescência§r.
+
+option.VIGNETTE = Vinheta
+option.VIGNETTE.comment = Escurece as bordas da tela.
+value.VIGNETTE.0 = §cNÃO
+value.VIGNETTE.1 = §aSIM
+
+option.VIGNETTE_STRENGTH = Força da Vinheta
+option.VIGNETTE_STRENGTH.comment = Ajusta a intensidade da §bVinheta§r.
+
+option.FILM_GRAIN = Granulação de Filme
+option.FILM_GRAIN.comment = Uma granulação em movimento exibida em cima da tela para imitar filmes antigos.
+value.FILM_GRAIN.0 = §cNÃO
+value.FILM_GRAIN.1 = §aSIM
+
+option.FILM_GRAIN_STRENGTH = Força da Granulação de Filme
+option.FILM_GRAIN_STRENGTH.comment = Ajusta a intensidade da §bGranulação de Filme§r.
+
+option.SHARPEN = Filtro de Nitidez
+option.SHARPEN.comment = Realça as cores para fazer elas parecerem mais nítidas.
+value.SHARPEN.0 = §cNÃO
+value.SHARPEN.1 = §aSIM
+
+option.SHARPEN_STRENGTH = Força da Nitidez
+option.SHARPEN_STRENGTH.comment = Ajusta a intensidade do bFiltro de Nitidez§r.
+
+option.EIGHT_BITS_FILTER = Filtro 8-Bits
+option.EIGHT_BITS_FILTER.comment = Faz o jogo parecer um jogo vintage 8-bits.
+value.EIGHT_BITS_FILTER.0 = §cNÃO
+value.EIGHT_BITS_FILTER.1 = §aSIM
+
+##################### DEBUG #####################
+
+option.DEBUG_HISTOGRAM = Mostrar Histograma
+value.DEBUG_HISTOGRAM.0 = §cNÃO
+value.DEBUG_HISTOGRAM.1 = §aSIM
+
+option.DEBUG_LUT = Mostrar LUT
+value.DEBUG_LUT.0 = §cNÃO
+value.DEBUG_LUT.1 = §aSIM
