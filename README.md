@@ -4,7 +4,7 @@
 
 # Introdução
 + Shaders de Minecraft com Localização em Português (Brasil)
-+ Toda a Documentação de Configurações de Shaders em Pt-BR
++ Toda a Documentação de Configurações de Shaders em pt-BR
 + Suporte para a Maioria dos Shaders Famosos
 
 # Notas Importantes
