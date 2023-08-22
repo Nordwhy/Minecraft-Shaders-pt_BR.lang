@@ -5,11 +5,11 @@
 # Introdução
 + Shaders de Minecraft com Localização em Português (Brasil).
 + Toda a Documentação de Configurações de Shaders em pt-BR.
-+ Suporte para a Maioria dos Shaders Famosos.
++ Suporte para a Maioria dos Seus Shaders Favoritos.
 
 # Notas Importantes
 + Algumas palavras não são diretamente traduzidas para conservar o significado técnico delas.
 + Erros de tradução e ortográficos podem existir, caso você encontre algum erro você pode me avisar e eu vou arrumar.
-+ Se quiser recomendar alguma mudança é só falar, se for justa a mudança eu irei mudar.
-+ Eu não traduzo shaders pagos, você pode até tentar usar o arquivo pt_BR.lang dentro do shaders pago, mas não tem garantia de que vai sincronizar ou ficar correto.
-+ Eu não pretendo traduzir todas as versões de um shaders, apenas as mais atuais e mais populares, mas sempre que uma nova lançar a antiga ficará guardada.
++ Se quiser recomendar alguma mudança é só falar e eu irei arrumar se for preciso.
++ Eu não traduzo shaders pagos. Você pode até tentar botar o arquivo lang na versão paga, mas não tem garantia de que vai funcionar corretamente.
++ Por enquanto tem pouquíssimos shaders traduzidos, principalmente por que eu sou preguiçoso, mas também por que demora horas pra traduzir um shaders.
