@@ -1,6 +1,6 @@
-# Tradução em Português (Brasil) para Shaders do Minecraft
+# Tradução em Português Brasileiro para Shaders do Minecraft
 
-![20230731_080631](https://github.com/Nordwhy/Minecraft-Shaders-pt_BR.lang/assets/139599149/c7650222-e70b-4e40-bf2c-74c19f71c20a)
+![57 Sem Título (1)](https://github.com/Nordwhy/Minecraft-Shaders-pt_BR.lang/assets/139599149/03a445ba-f66c-433e-b911-94fa87f89478)
 
 # Introdução
 + Shaders de Minecraft com Localização em Português (Brasil).
