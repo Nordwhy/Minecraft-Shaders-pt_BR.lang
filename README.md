@@ -12,4 +12,4 @@
 + Erros de tradução e ortográficos podem existir, caso você encontre algum erro você pode me avisar e eu vou arrumar.
 + Se quiser recomendar alguma mudança é só falar e eu irei arrumar se for preciso.
 + Eu não traduzo shaders pagos. Você pode até tentar botar o arquivo lang na versão paga, mas não tem garantia de que vai funcionar corretamente.
-+ Por enquanto tem pouquíssimos shaders traduzidos, principalmente por que eu sou preguiçoso, mas também por que demora horas pra traduzir um shaders.
++ Por enquanto tem pouquíssimos shaders traduzidos, principalmente porque eu sou preguiçoso, mas também porque demora horas pra traduzir um shaders.
